@@ -1,0 +1,92 @@
+.logo-img{
+  font-size: 100px;
+  color: darkgoldenrod;
+  
+
+} 
+.navbar-nav{
+    margin-left: 30%; 
+
+}
+.nav-link{
+    color: wheat;
+    text-transform: uppercase;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size:cover;
+    background-size: cover;
+}
+.slide:after {
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,0.6);
+  }
+.carousel-caption{
+    margin-bottom: 100px;
+
+}
+
+.carousel-caption h5{
+    font-size:50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkgoldenrod;
+    text-transform:uppercase;
+}
+.carousel-caption p{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom:40px;
+}
+.link-btn{
+    font-size: 15px;
+    padding:10px 25px;
+    text-decoration: none;
+    margin-top:20px;
+    text-transform: uppercase;
+    
+    border: 1px solid darkgoldenrod;
+    color:white ;
+       
+}
+.link-btn:hover{
+    text-decoration:none;
+    color: black;
+    background-color: darkgoldenrod;
+}
+
+
+p a{
+text-decoration:none;
+margin: 7px;
+} 
+.link-btn-tn{
+    background-color: darkgoldenrod;
+    color: black;
+    font-size: 15px;
+    padding:10px 25px;
+    text-decoration: none;
+    margin-top:20px;
+    text-transform: uppercase;
+}
+.link-btn-tn:hover{
+    text-decoration:none;
+    color:white;
+}
+
+
+
+.card-card{
+background-color:grey;
+
+
+}
+.card-ex{
+    text-align: center;
+}
