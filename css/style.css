@@ -1,5 +1,5 @@
 .logo-img{
-  font-size: 100px;
+  font-size: 60px;
   color: darkgoldenrod;
   
 
@@ -11,7 +11,18 @@
 .nav-link{
     color: wheat;
     text-transform: uppercase;
+    margin: 6px;
+    font-size:14px ;
+    font-family: sans-serif;
 }
+.nav-item .active{
+    color: darkgoldenrod;
+}
+.nav-link:hover{
+    color: darkorange;
+}
+
+
 .carousel-item{
     height: 100vh;
     min-height: 300px;
@@ -57,7 +68,7 @@
 }
 .link-btn:hover{
     text-decoration:none;
-    color: black;
+    color: #101010;
     background-color: darkgoldenrod;
 }
 
@@ -83,10 +94,200 @@ margin: 7px;
 
 
 .card-card{
-background-color:grey;
+margin-top:100px;
 
 
 }
 .card-ex{
     text-align: center;
 }
+.ex-icon i{
+    color: darkgoldenrod;
+    font-size:20px;
+}
+.article{
+    margin-top: 200px;
+}
+.article-header{
+    padding-top:10px;
+}
+
+
+.article-link{
+    padding:10px 25px;
+    background-color: black;
+    color: bisque;
+    width: 150px;
+    text-align: center;
+
+}
+.article-link a{
+    color: white;
+
+}
+.article-link:hover{
+    background-color: #181818;
+}
+.article-link a:hover{
+    color: darkgoldenrod;
+    text-decoration:none;
+}
+article-link a:visited{
+   color: blueviolet;
+}
+
+.article img{
+    height: 250px;
+    width:100%;
+}
+.what-d h3{
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: 200px;
+
+}
+
+.what-img img{
+    /* padding:20px 25px; */
+
+width: 200px;
+height: 200px;
+border-radius:50%;
+}
+.what-img:hover{
+    opacity: 0.6;
+}
+.what-d{
+    margin-top: 100px;
+}
+.what-col {
+    text-align: center;
+
+}
+.what-col h4{
+    text-transform: uppercase;
+}
+.gall{
+    background-color: #181818;
+}
+.gall .container{
+    padding-top:100px;
+
+}
+
+/* 
+.gall-col{
+    background-color: white;
+} */
+
+.gall-col img{
+ border-radius: 12px;
+  width: 100%;
+ background-color: yellow;
+ opacity: 1;
+display: block;
+transition: .5s ease;
+/* backface-visibility: hidden; */
+
+}
+
+
+
+
+.gall-mid{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+
+
+}
+.gall-col:hover img{
+opacity:0.3;
+transform: scale(1.15);
+}
+.gall-col:hover .gall-mid{
+    opacity: 1;
+}
+/* 
+h4{
+    background-color: #4CAF50;
+    color: white;
+    
+  } */
+
+  /* reviews */
+
+  
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+      text-align: center;
+      padding: 20px;
+      background: #ddd;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+
+  
+  /* Add an italic font style to all quotes */
+  q {font-style: italic;}
+  
+  /* Add a blue color to the author */
+  .author {color: cornflowerblue;}
