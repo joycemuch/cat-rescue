@@ -18,17 +18,48 @@
 .nav-item .active{
     color: darkgoldenrod;
 }
+
 .nav-link:hover{
     color: darkorange;
 }
+.nav-item-item{
+
+    margin-left:25%;
+    list-style: none;
+}
+.nav-item-item  i{
+    margin: 10px;
+    color: #ddd;
+    font-size: 20px;
+}
+.nav-item-item i:hover{
+  color: darkgoldenrod;
+}
+
+.navnav.sticky{
+ background-color:#191616;
+opacity: 1;
+
+}
 
 
+
+
+
+
+
+
+
+/* carousel */
+.carousel{ top: 0;}
+.carousel-inner{height:100vh;}
 .carousel-item{
     height: 100vh;
     min-height: 300px;
     background: no-repeat center center scroll;
     -webkit-background-size:cover;
     background-size: cover;
+    position: absolute;
 }
 .slide:after {
     content:"";
@@ -140,6 +171,26 @@ article-link a:visited{
     height: 250px;
     width:100%;
 }
+.article2-row{
+    height: 200px;
+
+}
+.article2-row .col{
+    padding-top: 20px;
+    text-align: center;
+}
+.article2-row .col h4{
+    text-transform: uppercase;
+    text-decoration-style: solid;
+}
+.article2-row .col p{
+    margin-top: 10px;
+}
+/* .article2-row .btn{
+    background-color: #101010;
+    colo
+} */
+
 .what-d h3{
   text-align: center;
   font-family: sans-serif;
@@ -167,11 +218,55 @@ border-radius:50%;
 .what-col h4{
     text-transform: uppercase;
 }
+
+
+
+.pat{
+    margin-top: 100px;
+    margin-bottom:100px;
+    text-align: center;
+}
+.pat h4{
+    text-align: center;
+    color:black;
+    text-transform: uppercase;
+}
+
+.pat .btn{
+    padding: 10px 25px;
+    text-align: center;
+    background-color: orange;
+    width: 200px;
+    border-style: 1px solid;
+    color:white;
+    text-transform: capitalize;
+    font-size: 15px;
+
+}
+.pat .btn:hover{
+    background-color: rgb(209, 155, 55);
+}
+
+.pat p{
+    margin:50px 150px 50px 150px;
+}
+
 .gall{
     background-color: #181818;
+    margin-top:100px;
+    
+}
+
+.gall h4{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+    text-align:center;
+    color: rgb(207, 153, 14);
 }
 .gall .container{
     padding-top:100px;
+    padding-bottom: 200px;
 
 }
 
@@ -214,6 +309,25 @@ transform: scale(1.15);
 .gall-col:hover .gall-mid{
     opacity: 1;
 }
+.mem-info{
+    text-align: center;
+}
+.mem-info h5{
+    text-transform: capitalize;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* 
 h4{
     background-color: #4CAF50;
@@ -285,9 +399,84 @@ h4{
   }
   
 
-  
+.mySlides-images{
+    width: 200px;
+    height: 200px;
+    border-radius:50%;
+    margin-bottom: 10px;
+}
+
   /* Add an italic font style to all quotes */
   q {font-style: italic;}
   
   /* Add a blue color to the author */
-  .author {color: cornflowerblue;}
+  .person {color: cornflowerblue;}
+
+
+
+  /* footer */
+footer{
+    background-color: #191616;
+    color: darkgoldenrod;
+    height: auto;
+}
+footer .row{
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+footer .container{
+    padding-bottom: 10px;
+}
+footer .icon-pic i{
+    font-size: 100px;
+    text-align: center;
+    border-bottom: 1px wheat;
+}
+footer li{
+    list-style: none;
+}
+footer h5{
+    color: rgb(246, 179, 8);
+}
+.explore li a{
+    color: darkgoldenrod;
+    text-decoration-line: none;
+}
+.explore li a :hover{
+    
+    text-decoration-line: none;
+}
+.social li{
+display: inline;
+margin-right: 15px;
+
+}
+.social li a i{
+    font-size: 20px;
+    border-radius: 16px;
+    color: #bbb;
+
+}
+.social li a i:hover{
+   color: #888;
+}
+input[type=submit]{
+    background-color: darkgoldenrod;
+    color:#101010;
+    width: auto;
+    border-style: none;
+    /* padding: 10px 10px; */
+    text-align: center;
+    
+
+}
+
+input[type = submit]:hover{
+    background-color: rgb(218, 171, 53);
+}
+
+.footer-footer{
+    text-align: center;
+    
+}
+

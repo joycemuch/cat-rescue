@@ -9,6 +9,7 @@
     <link rel="" href="js/style.js">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   </head>
+  
   <body>
   
  
@@ -16,10 +17,10 @@
 
 <!-- nav bar -->
 
-  <nav>
+  <nav class=" navnav fixed-top"> 
 
 
-    <div class="navbar  navbar-expand-sm  fixed-top"> 
+    <div class="navbar  navbar-expand"> 
       
       <div  class="logo-img">
 
@@ -56,14 +57,35 @@
     </ul>
      
 
+    <li class="nav-item-item ">
 
+      <i class="fas fa-search"></i>
+      
+      <i class="fas fa-user"></i>
+
+    </li>
+    
 
     </div>
     
 
-
-
   </nav>
+
+  <script>
+
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector(".navnav");
+      header.classList.toggle("sticky", window.scrollY >0)
+    })
+      
+    
+    </script>
+    
+
+
+
+
+
 
 
   <!--  carousel -->
@@ -73,7 +95,7 @@
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      <!-- <li data-target="#carouselExampleCaptions" data-slide-to="2"></li> -->
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -88,7 +110,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="/images/nadi.jpg" class="slide d-block w-100" alt="...">
+        <img src="/images/cat1.jpg" class="slide d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5>Second slide label</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -102,8 +124,8 @@
 
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="/images/nadi.jpg" class="slide d-block w-100" alt="...">
+        <!-- <div class="carousel-item">
+        <img src="/images/cat1.jpg" class="slide d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5>Third slide label</h5>
           
@@ -115,11 +137,8 @@
           </p>
            
 
-
-
-
         </div>
-      </div>
+      </div>       -->
     </div>
     <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -208,6 +227,34 @@
 </div>
 
 
+<div class="article2-row row">
+  <div class="col">
+    <img src="images/lucky.jpg" alt="" width="200">
+  </div>
+
+  <div class="col">
+  <h4>are they mysterious</h4>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ipsam facilis officia doloribus optio! Voluptatem praesentium quibusdam delectus eum porro assumenda, voluptas explicabo libero doloremque vitae quas velit at et.</p>
+  <br>
+  
+  <p class="article-link"><a href="#">More</a></p>
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </div>
 
@@ -224,7 +271,7 @@
 
   <div class="what-col col">
        <div class="what-img">
-         <img src="/images/nadi.jpg"  alt="">
+         <img src="/images/cat4.jpg"  alt="">
        </div>
        <h4>treat</h4>
        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tenetur voluptatibus quaerat, magni sed ea et molestias veniam voluptas iste totam, molestiae laborum perferendis ipsa in ullam quo pariatur illo!</p>
@@ -233,7 +280,7 @@
 
   <div class=" what-col col">
   <div class="what-img">
-    <img src="/images/nadi.jpg"  alt="">
+    <img src="/images/cat5.jpg"  alt="">
   </div>
   <h4>treat</h4>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tenetur voluptatibus quaerat, magni sed ea et molestias veniam voluptas iste totam, molestiae laborum perferendis ipsa in ullam quo pariatur illo!</p>
@@ -249,7 +296,7 @@
        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tenetur voluptatibus quaerat, magni sed ea et molestias veniam voluptas iste totam, molestiae laborum perferendis ipsa in ullam quo pariatur illo!</p>
 
   </div>
-
+<!-- 
   <div class="what-d row row">
 
     <div class="what-col col">
@@ -280,18 +327,44 @@
   
     </div>
   
+</div> -->
+
+
+
+</div>
+
+</div>
+
+<!-- partnership -->
+<div class=" pat container">
+  <h4>join our partnership</h4>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut saepe nisi reprehenderit iure, perferendis iusto debitis recusandae, ratione odio impedit itaque officiis voluptas consequatur. Magni minus modi ipsam ipsa pariatur!</p>
+  <button class="btn">sign up</button>
+
 
 
 </div>
 
 
-</div>
 
-</div>
+
+
+
+
+
+
+
+
+
+
 <!-- our recent gallery -->
 
 
 <div class="gall" >
+
+   <h4>our recent gallery</h4>
+
+
 <div class="container">
 
   <div class="gall-row row ">
@@ -377,7 +450,7 @@
   <br>
  <!-- third row -->
 
-
+<!-- 
  <div class="gall-row row ">
 
   <div class="gall-col col-sm">
@@ -402,7 +475,7 @@
       <h4>hello</h4>
   </div>
   </div>
- 
+  -->
 <!-- 
   <div class="gall-col col-sm">
     <img src="/images/nadi.jpg"  alt="">
@@ -419,28 +492,50 @@
 
 </div>
 
+
+
+
+
+
+
+
+
 <!-- reviews -->
 
 
 <div class="slideshow-container">
 
   <div class="mySlides">
-       
+    <div>
+       <img class = "mySlides-images " src="images/man1.jpg" alt="">
+    </div>
+   
 
-
-
-    <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
-    <p class="author">- John Keats</p>
+    <q>Cats have feelings just like humans and they ought to be treated respectfully</q>
+    <p class="person">- John klein</p>
   </div>
   
   <div class="mySlides">
-    <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
-    <p class="author">- Ernest Hemingway</p>
+
+    <div>
+      <img class = "mySlides-images " src="images/man2.jpg" alt="">
+   </div>
+  
+
+
+
+    
+    <q>Cat rescue are doing a great ob of provding necessity needs to homeless cats.</q>
+    <p class="person">- Ernest hillary</p>
   </div>
   
   <div class="mySlides">
-    <q>I have not failed. I've just found 10,000 ways that won't work.</q>
-    <p class="author">- Thomas A. Edison</p>
+    <div>
+      <img class = "mySlides-images " src="images/woman1.jpg" alt="">
+   </div>
+  
+    <q>The services are impecable , in a span of two weeks i have fully learnt how to take care of my cat and understand her feelings</q>
+    <p class="person">- Sarah A. Edison</p>
   </div>
   
   <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -486,12 +581,85 @@
 <!-- footer -->
 
 <footer>
+<div class="container">
+<div class="row">
+<div class="col-sm-4">
+<div class="logo-text">
+  <h5>CAT RESCUE</h5>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda recusandae ipsa tenetur iure? Nobis, velit ipsam. Libero dolores, id deleniti illum nisi necessitatibus dolore aliquid delectus incidunt atque nemo sit!</p>
+</div>
+ <div class="sub">
+   <p><strong>subscribe to our newsletter</strong></p>
+<form action="">
+  <input type="Email" name="email" placeholder="Enter your email....">
+  <input type="submit" value="Subscribe">
+</form>
+</div>
+
+</div>
+<div class="col-sm-2" >
+ <div class="explore">
+   <h5>Explore</h5>
+   <li><a href="#">Home</a></li>
+   <li><a href="#">blogs</a></li>
+   <li><a href="#">news</a></li>
+   <li><a href="#">other animals</a></li>
+ </div>
+ 
+</div>
+  <div class="col-sm-3">
+    <div class="fo">
+      <h5>Where are we found</h5>
+      <li>Nairobi</li>
+      <li>kakamega</li>
+      <li>kisumu</li>
+      <li>Nakuru</li>
+      <li>kitale</li>
+      <li>Mombasa</li>
+      <li>malindi</li>
+    </div>
+  </div>
+
+<div class="icon-pic col-sm" >
+  <i class="fas fa-paw"></i>
+  <!-- <hr style="background-color: #bbb"> -->
+<br>
+<!-- social media -->
+<div class="social">
+  <li><a href=""><i class="fab fa-facebook"></i></a></li>
+  <li><a href=""><i class="fab fa-twitter"></i></a></li>
+  <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+  <li><a href=""><i class="fab fa-youtube"></i></a></li>
+ 
+</div>
+<div class="visit">
+<li>Nairobi, Kenya</li>
+<li>P.O Box 233 -11001</li>
+<li>Ruaraka , kasarani</li>
+<li>joycemuchema036@gmail.com</li>
+<li>+254 791912477</li>
+
+</div>
+</div>
+</div>
+
+<div>
+<hr style="background-color:#bbb ;">
+</div>
 
 
-
-
-
+<div class="footer-footer">
+  <p>&copy 2020 | created by joyce muchema</p>
   
+</div>
+
+</div>
+
+
+
+
+
+
 </footer>
 
 
