@@ -9,18 +9,20 @@
 
 }
 .nav-link{
-    color: wheat;
+    color:   #E0E6FF;
     text-transform: uppercase;
     margin: 6px;
     font-size:14px ;
     font-family: sans-serif;
 }
 .nav-item .active{
-    color: darkgoldenrod;
+    color: white;
+    border-bottom:1px solid darkgoldenrod;
 }
 
 .nav-link:hover{
-    color: darkorange;
+    color:  #777B88;
+    border-bottom:1px solid darkgoldenrod;
 }
 .nav-item-item{
 
@@ -33,21 +35,79 @@
     font-size: 20px;
 }
 .nav-item-item i:hover{
-  color: darkgoldenrod;
+  color:  #777B88;
 }
 
 .navnav.sticky{
- background-color:#191616;
+ background-color:#580658;
 opacity: 1;
+padding-bottom: 5px;
 
 }
 
 
+/* overlay */
 
-
-
-
-
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1999;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 46%;
+    width: 80%;
+    text-align: center; 
+    margin-top: 30px;
+    margin: auto;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .overlay .closebtn:hover {
+    color: #ccc;
+  }
+  
+  .overlay input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: white;
+  }
+  
+  .overlay input[type=text]:hover {
+    background: #f1f1f1;
+  }
+  
+  .overlay button {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .overlay button:hover {
+    background: #bbb;
+  }
 
 
 /* carousel */
@@ -133,7 +193,7 @@ margin-top:100px;
     text-align: center;
 }
 .ex-icon i{
-    color: darkgoldenrod;
+    color: #660033;
     font-size:20px;
 }
 .article{
@@ -219,10 +279,31 @@ border-radius:50%;
     text-transform: uppercase;
 }
 
+.row-vp{
+    
+    text-align: center;
+}
+
+.col-vp h5{
+    text-transform: uppercase;
+    padding-top: 100px;
+    font-size: 25px;
+    
+}
+.col-vp P{
+    font-size: 15px;
+}
+.con-vp{
+    margin:100px 0 100px 0;
+}
+.row-vp img {
+    width: 100%;
+    height: 100vh;
+}
 
 
 .pat{
-    margin-top: 100px;
+   
     margin-bottom:100px;
     text-align: center;
 }
@@ -230,11 +311,12 @@ border-radius:50%;
     text-align: center;
     color:black;
     text-transform: uppercase;
+    color: #660033;
 }
 
 .pat .btn{
     padding: 10px 25px;
-    text-align: center;
+    text-align: center;   
     background-color: orange;
     width: 200px;
     border-style: 1px solid;
@@ -246,27 +328,29 @@ border-radius:50%;
 .pat .btn:hover{
     background-color: rgb(209, 155, 55);
 }
-
+.pat h4{
+    color: #660033;
+}
 .pat p{
     margin:50px 150px 50px 150px;
 }
 
 .gall{
-    background-color: #181818;
+    /* background-color:	 #E0E6FF; */
     margin-top:100px;
     
 }
 
 .gall h4{
     padding-top: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     text-transform: capitalize;
     text-align:center;
-    color: rgb(207, 153, 14);
+    color: #660033;
 }
 .gall .container{
     padding-top:100px;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
 
 }
 
@@ -341,7 +425,7 @@ h4{
 /* Slideshow container */
 .slideshow-container {
     position: relative;
-    background: #f1f1f1f1;
+    /* background: #f1f1f1f1; */
   }
   
   /* Slides */
@@ -383,20 +467,9 @@ h4{
   .dot-container {
       text-align: center;
       padding: 20px;
-      background: #ddd;
+      /* background: #ddd; */
   }
   
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
   
 
 .mySlides-images{
@@ -416,9 +489,10 @@ h4{
 
   /* footer */
 footer{
-    background-color: #191616;
-    color: darkgoldenrod;
+    background-color: 	#330033;
+    color: #f1f1f1f1;
     height: auto;
+    margin-top:50px;
 }
 footer .row{
     padding-bottom: 100px;
@@ -438,12 +512,16 @@ footer li{
 footer h5{
     color: rgb(246, 179, 8);
 }
+.sub p{
+    text-transform: uppercase;
+}
 .explore li a{
-    color: darkgoldenrod;
+    color: #bbb;
+    text-transform: capitalize;
     text-decoration-line: none;
 }
-.explore li a :hover{
-    
+.explore a :hover{
+    color: darkgoldenrod;
     text-decoration-line: none;
 }
 .social li{

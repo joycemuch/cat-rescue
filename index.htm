@@ -59,7 +59,7 @@
 
     <li class="nav-item-item ">
 
-      <i class="fas fa-search"></i>
+      <i class="fas fa-search" onclick="openSearch()"></i>
       
       <i class="fas fa-user"></i>
 
@@ -71,16 +71,39 @@
 
   </nav>
 
+  <div id="myOverlay" class="overlay">
+    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+    <div class="overlay-content">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </div>
+
+
   <script>
 
     window.addEventListener("scroll", function(){
       var header = document.querySelector(".navnav");
       header.classList.toggle("sticky", window.scrollY >0)
     })
-      
+ </script>
     
-    </script>
-    
+
+
+<script>
+  function openSearch() {
+    document.getElementById("myOverlay").style.display = "block";
+  }
+  
+  function closeSearch() {
+    document.getElementById("myOverlay").style.display = "none";
+  }
+  </script>
+       
+
+<!-- form tab -->
 
 
 
@@ -243,23 +266,7 @@
 
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div>
-
-
-
 
 <!-- what do we do  cards-->
 
@@ -334,6 +341,45 @@
 </div>
 
 </div>
+
+<!-- volunteering program -->
+
+<div class="container con-vp  "> 
+<div class="row-vp row">
+  <div class="col-sm">
+  <img src="https://source.unsplash.com/xy1Yo_MHDvQ">
+</div>
+
+<div class="col-sm col-vp">
+
+   <h5>want to volunteer</h5>
+   <br>
+   <br>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet et non distinctio id rem? Repellendus iure eius, cumque soluta est ut laboriosam nisi ratione quaerat dicta sit sint impedit odio.</p>
+   
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
 
 <!-- partnership -->
 <div class=" pat container">
