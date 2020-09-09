@@ -12,82 +12,121 @@
 
 
 
-<!-- nav bar -->
-
-<nav class=" navnav fixed-top"> 
-
-
-    <div class="navbar  navbar-expand"> 
-      
-      <div  class="logo-img">
-
-        <i class="fas fa-paw"></i>
-      
-       </div>
-      
-
-
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Home</a>
-      </li>
-      
-      <li class="nav-item">
-        <a class="nav-link" href="#">About us</a>
-      </li>
-
-
-      <li class="nav-item">
-        <a class="nav-link" href="#">breeds</a>
-      </li>
-
-
-      <li class="nav-item">
-        <a class="nav-link" href="#">blog</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="#">contact us</a>
-      </li>
-      
-
-    </ul>
-     
-
-    <li class="nav-item-item ">
-
-      <i class="fas fa-search"></i>
-      
-      <i class="fas fa-user"></i>
-
-    </li>
-    
-
-    </div>
-    
-
-  </nav>
-
-  <script>
-
-    window.addEventListener("scroll", function(){
-      var header = document.querySelector(".navnav");
-      header.classList.toggle("sticky", window.scrollY >0)
-    })
-      
-    
-    </script>
-    
-
-
-
-
-
-
-
 
 </head>
+
+
 <body>
+
+  
+   <div class="container  con-card">
+       <div class="row row-card">
+         <div class="column "  style="background-color: #e6c2bf;">
+           <img src="/images/cats.png" alt="" width="100%">
+            
+         </div>
+
+
+
+
+
+   <div class="column " id="column-content" >
+     <div>
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+     </div>
+             <div class="tab">
+                 <button class="tablinks" onclick="openTab(event , 'up')" id="defaultOpen">sign up</button>
+                 <button class="tablinks" onclick="openTab(event , 'in')" style="border-right:none; ">sign in</button>
+             </div>
+  <!-- tab content -->
+    <div class="tabcontent" id = "up">
+    <h4>Sign up</h4>
+    <p>please fill this form to create an account</p>
+    <hr>
+    <form action="">
+
+    <label for="uname">User Name</label><br>
+    <input type="text" id="name" placeholder="Enter user name" required >
+
+    <label for="email">Email</label><br>
+    <input type="email" id="email" placeholder="Enter your email" name="email" required>
+
+
+    <label for="pwd">Password</label><br>
+    <input type="password" id="pwd " placeholder="Enter your password"    required>
+
+    <label for="pwd">Re-enter password</label><br>
+    <input type="password" id = "pwd" placeholder="Re-enter your password" required>
+
+
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+      
+      <br>
+      
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary">Cancel</button>
+
+     </form>
+    
+
+      </div>
+
+<!-- tab 2 -->
+<div class="tabcontent" id="in">
+<h4>sign in</h4>
+<hr>
+    <form action="">
+  
+
+    <label for="email">Email</label><br>
+    <input type="email" id="email" placeholder="Enter your email" name="email" required>
+
+
+    <label for="pwd">Password</label><br>
+    <input type="password" id="pwd " placeholder="Enter your password"    required>
+
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+      <br>
+      
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary">Cancel</button>
+     </form>
+</div>
+</div>
+</div>
+</div>
+     <script>
+        function openTab(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+           
+
+
+
+
+
     
 </body>
 </html>

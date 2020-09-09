@@ -1,0 +1,72 @@
+
+.con-card{
+    /* border:red 2px solid; */
+    border-radius: 10px;
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* }
+
+.con-card row{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */
+.column{
+    float: left;
+    width:50%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+    .tab{
+        margin-left: 30%;
+    }
+  }
+.tab{margin-left: 50%;}
+
+.tab button {
+    width:100px;
+    padding: 5px 15px;
+    border: none;
+    background-color: white;
+    border-radius:16px;
+    /* border-right:1px solid ; */
+  
+}
+.tab button.active {
+    background-color: #e6c2bf;
+    color:#660033;
+  }
+.tablinks{
+    text-transform: capitalize;
+    margin-right:6px;
+}
+.tab{
+   margin: 40px 0px 5px 40%; 
+}
+#column-content .tabcontent{
+    margin: 5px  10px 5px 10%;
+}
+.tabcontent button{
+    width: 200px;
+    background-color: #660033;
+    border:none;
+}
+.tabcontent button:hover{
+    background-color:#c80567;
+}
+#column-content .tabcontent h4{text-transform: capitalize; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+#column-content .tabcontent p{text-transform: capitalize;}
+input[type =text], [type = email] , [type = password]{
+      
+      width: 100%;
+      margin: 2px 0;
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 1px solid  #888 ;
+  }
